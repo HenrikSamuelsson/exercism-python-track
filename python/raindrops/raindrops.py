@@ -1,13 +1,17 @@
-def convert(number):
-    result = ""
+def convert(number) -> str:
+    # Start with an empty string for the rain drop sound
+    rain_drop_sound = ""
+
+    # Possibly add sounds based on divisibility of the input number
     if number % 3 == 0:
-        result += "Pling"
+        rain_drop_sound += "Pling"
     if number % 5 == 0:
-        result += "Plang"
+        rain_drop_sound += "Plang"
     if number % 7 == 0:
-        result += "Plong"
+        rain_drop_sound += "Plong"
 
-    if result == "":
-        result = str(number)
+    # Shall return the number itself if it does not produce any sound
+    if rain_drop_sound == "":
+        rain_drop_sound = str(number)
 
-    return result
+    return rain_drop_sound
