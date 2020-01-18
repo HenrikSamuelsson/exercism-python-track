@@ -1,4 +1,9 @@
 def convert(number) -> str:
+    """
+    Convert a number into a string that contains raindrop sounds corresponding to certain potential factors.
+    :param number: Number representing a raindrop to be converted
+    :return: String describing the sound of the raindrop
+    """
     # Start with an empty string for the rain drop sound
     rain_drop_sound = ""
 
